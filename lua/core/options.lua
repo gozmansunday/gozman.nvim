@@ -8,11 +8,11 @@ vim.g.have_nerd_font = true
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 vim.schedule(function()
-  vim.opt.clipboard = 'unnamedplus'
+	vim.opt.clipboard = "unnamedplus"
 end)
 
 -- Enable mouse mode
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
@@ -30,7 +30,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -44,11 +44,12 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
-vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.list = false
+-- vim.opt.listchars = { tab = "", trail = "", nbsp = "" }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
+vim.opt.inccommand = "split"
 
 -- Show which line your cursor is on
 vim.opt.cursorline = true
@@ -69,7 +70,7 @@ vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 
 -- Minimal number of screen columns either side of cursor if wrap is `false` (default: 0)
-vim.opt.sidescrolloff = 4
+vim.opt.sidescrolloff = 8
 
 -- Set termguicolors to enable highlight groups (default: false)
 -- vim.opt.termguicolors = true
@@ -84,7 +85,7 @@ vim.opt.numberwidth = 2
 vim.opt.showtabline = 2
 
 -- Allow backspace on (default: 'indent,eol,start')
-vim.opt.backspace = 'indent,eol,start'
+vim.opt.backspace = "indent,eol,start"
 
 -- So that `` is visible in markdown files (default: 1)
 vim.opt.conceallevel = 0
@@ -93,5 +94,4 @@ vim.opt.conceallevel = 0
 vim.opt.backup = false
 
 -- Set completeopt to have a better completion experience (default: 'menu,preview')
-vim.opt.completeopt = 'menuone,noselect,noinsert'
-
+vim.opt.completeopt = "menuone,noselect,noinsert"
