@@ -32,7 +32,7 @@ require("lazy").setup({
 	require("plugins.conform"),
 	require("plugins.indent-line"),
 	require("plugins.alpha"),
-	require("plugins.misc"),
 	require("plugins.todo-comments"),
 	require("plugins.comment"),
+	require("plugins.misc"),
 })
