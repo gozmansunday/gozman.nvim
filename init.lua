@@ -34,4 +34,5 @@ require("lazy").setup({
 	require("plugins.alpha"),
 	require("plugins.misc"),
 	require("plugins.todo-comments"),
+	require("plugins.comment"),
 })
